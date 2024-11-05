@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HodlInfo - Best Price to Trade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">HODLINFO</div>
+            <div class="currency-selector">
+                <select id="currencySelect">
+                    <option value="INR">INR</option>
+                </select>
+            </div>
+            <div class="crypto-selector">
+                <select id="cryptoSelect">
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="USDT">USDT</option>
+                    <option value="XRP">XRP</option>
+                    <option value="TRX">TRX</option>
+                </select>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="buy-btc-button">
+                <a href="https://wazirx.com/exchange/BTC-INR" target="_blank">BUY BTC</a>
+            </div>
+            <div class="telegram-button">
+                <a href="https://telegram.me/hodlinfo" target="_blank">Connect Telegram</a>
+            </div>
+            <div class="theme-switch">
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="stats-container">
+            <div class="stat-box">
+                <h2 id="cryptoCount">0</h2>
+                <p>Cryptocurrencies</p>
+            </div>
+            <div class="stat-box">
+                <h2>1</h2>
+                <p>Exchanges</p>
+            </div>
+            <div class="stat-box timer">
+                <h2 id="countdown">60</h2>
+                <p>Refreshes in</p>
+            </div>
+        </div>
+        <div class="best-price">
+            <h1>Best Price to Trade</h1>
+            <div id="averagePrice" class="average-price">₹ 0</div>
+            <p>Average BTC/INR net price including commission</p>
+        </div>
+        <table id="cryptoTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Difference</th>
+                    <th>Savings</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Disclaimer</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+        <p>Copyright © 2024 HodlInfo.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
